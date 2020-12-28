@@ -6,7 +6,7 @@ import os
 import random
 
 client = discord.Client()
-token = os.environ['discord_token']
+token = os.getenv('DISCORD')
 
 with open('tha_thinh.txt', 'r', encoding='utf-8') as f:
     tha_thinh = f.read().splitlines()
