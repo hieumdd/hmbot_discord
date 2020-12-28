@@ -9,13 +9,8 @@ client = discord.Client()
 with open('token.txt', 'r') as f:
     token = f.read()
 
-list_of_text = [
-    'HM đẹp zai vl',
-    'HM chym to vl',
-    'Quyên Quyên Quyên',
-    'Chatbot này ngu nhưng nó biết trêu Sơn hahahahahahahahaha'
-]
-
+with open('tha_thinh.txt', 'r', encoding='utf-8') as f:
+    tha_thinh = f.read().splitlines()
 
 @client.event
 async def on_ready():
@@ -26,7 +21,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
-    await message.channel.send(random.choice(list_of_text))
+    #await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
+    await message.channel.send(random.choice(tha_thinh))
 
 client.run(token)
