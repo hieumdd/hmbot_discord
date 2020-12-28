@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 
 import discord
 import os
@@ -16,9 +16,11 @@ list_of_text = [
     'Chatbot này ngu nhưng nó biết trêu Sơn hahahahahahahahaha'
 ]
 
+
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
+
 
 @client.event
 async def on_message(message):
