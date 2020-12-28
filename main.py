@@ -23,5 +23,6 @@ async def on_message(message):
         return
     #await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
     await message.channel.send(tha_thinh[0])
+    await message.channel.send('meomưoàĐâs')
 
 client.run(token)
