@@ -21,7 +21,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
-    #await message.channel.send(random.choice(tha_thinh))
+    #await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
+    await message.channel.send(random.choice(tha_thinh))
 
 client.run(token)
