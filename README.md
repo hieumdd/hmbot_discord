@@ -1,1 +1,3 @@
-"# HMBot_Discord" 
+# HMBot for Discord
+
+Thả thính dạo
