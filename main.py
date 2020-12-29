@@ -4,6 +4,7 @@
 import discord
 import os
 import random
+from keep_alive import keep_alive
 
 client = discord.Client()
 token = os.getenv('DISCORD')
@@ -23,4 +24,5 @@ async def on_message(message):
     #await message.channel.send('Nhân danh NAM THẦN ĐỊT MẸ t đcm thg ' + message.author.mention)
     await message.channel.send(random.choice(tha_thinh))
 
+keep_alive()
 client.run(token)
